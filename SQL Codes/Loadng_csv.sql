@@ -26,3 +26,7 @@ lines terminated by "\r\n" ignore 1 lines;
 
 select * from bank_customers;
 select count(*) from bank_customers;
+
+
+use august;
+select * from bitcoin_data;
