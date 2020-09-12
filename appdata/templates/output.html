@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <center>
+            <h1> Welcome to Bank Churn Modelling Dashboard </h1>
+            <br><hr><hr><br><br>
+            <h5>Here is the prediction for current user - </h5>
+            <br><br>
+            <table border=2>
+                <tr><th> Customer Attribute </th>
+                <th> Value </th></tr>
+                {% for key,value in output.items() %}
+                <tr>
+                    <th>{{key}}</th>
+                    <td>{{value}}</td>
+                </tr>
+                {% endfor %}
+            </table>
+            <br><br>
+            <a href="http://127.0.0.1:5000/"><button> New Prediction </button></a>
+            <br><br><hr><p>Designed by BootUP </p><hr><br>
+        </center>
+    </body>
+</html>
